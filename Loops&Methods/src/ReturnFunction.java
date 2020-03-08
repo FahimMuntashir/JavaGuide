@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Functions {
-    public static void Addition()
+public class ReturnFunction {
+    public static int Addition()
     {
 
         System.out.println("Enter first number: ");
@@ -12,10 +12,11 @@ public class Functions {
         Scanner s2 = new Scanner(System.in);
         int number2 = s2.nextInt();
 
-        System.out.println("Addition is: "+(number1+number2));
+        return number1+number2;
     }
     public static void main(String[] args) {
-        Addition();
+        System.out.println("Addition"+Addition());
+        System.out.println("Addition"+Addition());
 
     }
 }
