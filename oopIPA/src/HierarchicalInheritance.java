@@ -69,6 +69,6 @@ public class HierarchicalInheritance {
         System.out.println(s1.getFees());
         System.out.println(s1.getCgpa());
 
-      
+
     }
 }
