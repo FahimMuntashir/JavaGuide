@@ -1,19 +1,21 @@
 class OuterClass
 {
-    class InnerClass
+    static int a=10;
+    static class InnerClass
     {
         public void f1(){
-            System.out.println("Inner class function");
+            System.out.println("Inner class function"+a);
         }
     }
 }
 public class InnerClass {
     public static void main(String[] args) {
-        OuterClass out = new OuterClass();
-        OuterClass.InnerClass in = out.new InnerClass(); //Object of the inner class
+
+        OuterClass.InnerClass o1 = new OuterClass.InnerClass();
+        o1.f1();
 
 
-        in.f1();
+
 
     }
 }
